@@ -1,8 +1,50 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
+
+:root {
+  --cosmic-bg-primary: #0B1738;
+  --cosmic-primary: #0033CC;
+  --cosmic-accent: #1363FB;
+  --cosmic-hover: #3C7AF1;
+  --cosmic-black: #000000;
+  --cosmic-gray-dark: #53565A;
+  --cosmic-gray-medium: #9DA2AF;
+  --cosmic-bg-secondary: #EDEFF2;
+}
+
+.cosmic-theme {
+  background-color: var(--cosmic-bg-primary);
+  color: white;
+}
+
+.cosmic-button {
+  background-color: var(--cosmic-accent);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.cosmic-button:hover {
+  background-color: var(--cosmic-hover);
+}
+
+.cosmic-panel {
+  background-color: var(--cosmic-bg-secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cosmic-sidebar {
+  background-color: var(--cosmic-black);
+  color: white;
 }
 
 .logo {
@@ -12,10 +54,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #1363FBAA);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #1363FBAA);
 }
 
 @keyframes logo-spin {
