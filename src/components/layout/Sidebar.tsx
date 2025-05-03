@@ -37,29 +37,29 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
     >
       <ScrollArea className="h-[calc(100vh-4rem)]">
         <div className="px-3 py-4">
-          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight text-white">Main Navigation</h2>
+          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight text-white">Navegação Principal</h2>
           <div className="space-y-1">
-            <NavItem to="/" icon={<Home className="h-5 w-5" />} label="Home" />
-            <NavItem to="/dashboard" icon={<LayoutDashboard className="h-5 w-5" />} label="Dashboard" />
-            <NavItem to="/courses" icon={<Book className="h-5 w-5" />} label="My Courses" />
-            <NavItem to="/calendar" icon={<Calendar className="h-5 w-5" />} label="Calendar" />
+            <NavItem to="/" icon={<Home className="h-5 w-5" />} label="Início" />
+            <NavItem to="/dashboard" icon={<LayoutDashboard className="h-5 w-5" />} label="Painel" />
+            <NavItem to="/courses" icon={<Book className="h-5 w-5" />} label="Meus Cursos" />
+            <NavItem to="/calendar" icon={<Calendar className="h-5 w-5" />} label="Calendário" />
           </div>
           
           <Separator className="my-4 bg-sidebar-border" />
           
-          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight text-white">Courses</h2>
+          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight text-white">Cursos</h2>
           <div className="space-y-1">
-            <NavItem to="/course/mathematics" icon={<GraduationCap className="h-5 w-5" />} label="Mathematics" />
-            <NavItem to="/course/computer-science" icon={<GraduationCap className="h-5 w-5" />} label="Computer Science" />
-            <NavItem to="/course/physics" icon={<GraduationCap className="h-5 w-5" />} label="Physics" />
+            <NavItem to="/course/mathematics" icon={<GraduationCap className="h-5 w-5" />} label="Matemática" />
+            <NavItem to="/course/computer-science" icon={<GraduationCap className="h-5 w-5" />} label="Ciência da Computação" />
+            <NavItem to="/course/physics" icon={<GraduationCap className="h-5 w-5" />} label="Física" />
           </div>
           
           <Separator className="my-4 bg-sidebar-border" />
           
-          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight text-white">Resources</h2>
+          <h2 className="mb-2 px-4 text-lg font-semibold tracking-tight text-white">Recursos</h2>
           <div className="space-y-1">
-            <NavItem to="/grades" icon={<Gauge className="h-5 w-5" />} label="Grades" />
-            <NavItem to="/participants" icon={<Users className="h-5 w-5" />} label="Participants" />
+            <NavItem to="/grades" icon={<Gauge className="h-5 w-5" />} label="Notas" />
+            <NavItem to="/participants" icon={<Users className="h-5 w-5" />} label="Participantes" />
           </div>
         </div>
       </ScrollArea>

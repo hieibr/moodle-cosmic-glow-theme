@@ -14,7 +14,7 @@ import {
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-40 border-b bg-white dark:bg-moodle-darkBlue shadow-sm">
+    <header className="sticky top-0 z-40 border-b bg-sidebar text-sidebar-foreground shadow-sm">
       <div className="flex h-16 items-center justify-between px-4 sm:px-6">
         <div className="flex items-center gap-4">
           <Logo />
@@ -23,7 +23,7 @@ const Header = () => {
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
                 type="search"
-                placeholder="Search courses..."
+                placeholder="Pesquisar cursos..."
                 className="pl-8 bg-background"
               />
             </div>
@@ -31,10 +31,10 @@ const Header = () => {
         </div>
         
         <div className="flex items-center gap-3">
-          <Button variant="ghost" size="icon" className="text-moodle-darkGray hover:text-moodle-brightBlue dark:text-moodle-gray dark:hover:text-white">
+          <Button variant="ghost" size="icon" className="text-moodle-light hover:text-white dark:text-moodle-gray dark:hover:text-white">
             <Bell className="h-5 w-5" />
           </Button>
-          <Button variant="ghost" size="icon" className="text-moodle-darkGray hover:text-moodle-brightBlue dark:text-moodle-gray dark:hover:text-white">
+          <Button variant="ghost" size="icon" className="text-moodle-light hover:text-white dark:text-moodle-gray dark:hover:text-white">
             <MessageCircle className="h-5 w-5" />
           </Button>
           <DropdownMenu>
@@ -42,25 +42,25 @@ const Header = () => {
               <Button 
                 variant="ghost" 
                 size="icon" 
-                className="rounded-full border h-9 w-9 bg-moodle-light dark:bg-moodle-blue/30"
+                className="rounded-full border h-9 w-9 bg-moodle-blue/30"
               >
-                <User className="h-4 w-4" />
+                <User className="h-4 w-4 text-white" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56">
-              <DropdownMenuLabel>My Account</DropdownMenuLabel>
+              <DropdownMenuLabel>Minha Conta</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Grades</DropdownMenuItem>
-              <DropdownMenuItem>Messages</DropdownMenuItem>
-              <DropdownMenuItem>Preferences</DropdownMenuItem>
+              <DropdownMenuItem>Perfil</DropdownMenuItem>
+              <DropdownMenuItem>Notas</DropdownMenuItem>
+              <DropdownMenuItem>Mensagens</DropdownMenuItem>
+              <DropdownMenuItem>Preferências</DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem>
                 <Settings className="mr-2 h-4 w-4" />
-                <span>Settings</span>
+                <span>Configurações</span>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>Log out</DropdownMenuItem>
+              <DropdownMenuItem>Sair</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
