@@ -15,22 +15,23 @@ import {
 const Header = () => {
   return (
     <header className="sticky top-0 z-40 border-b bg-sidebar text-sidebar-foreground shadow-sm">
-      <div className="flex h-16 items-center justify-between px-4 sm:px-6">
-        <div className="flex items-center gap-4">
-          <Logo />
-          <div className="hidden md:block w-full max-w-sm">
-            <div className="relative">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="search"
-                placeholder="Pesquisar cursos..."
-                className="pl-8 bg-background"
-              />
-            </div>
+      <div className="flex h-16 items-center px-4 sm:px-6">
+        <div className="flex-1">
+          <Logo className="mr-6" />
+        </div>
+        
+        <div className="flex-1 max-w-md mx-auto">
+          <div className="relative">
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+            <Input
+              type="search"
+              placeholder="Pesquisar cursos..."
+              className="pl-8 bg-background"
+            />
           </div>
         </div>
         
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 ml-4">
           <Button variant="ghost" size="icon" className="text-moodle-light hover:text-white dark:text-moodle-gray dark:hover:text-white">
             <Bell className="h-5 w-5" />
           </Button>
