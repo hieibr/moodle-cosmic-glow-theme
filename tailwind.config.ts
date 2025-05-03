@@ -53,7 +53,7 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Moodle theme colors
+				// Moodle theme colors - mantendo a paleta original mas ajustando para o estilo clássico
 				moodle: {
 					darkBlue: '#0B1738',
 					blue: '#0033CC',
@@ -63,6 +63,17 @@ export default {
 					darkGray: '#53565A',
 					gray: '#9DA2AF',
 					light: '#EDEFF2',
+				},
+				// Novas cores do tema clássico
+				classicMoodle: {
+					primary: '#1363FB',
+					secondary: '#F9F9F9',
+					border: '#DADADA',
+					link: '#1363FB',
+					text: '#333333',
+					heading: '#333333',
+					background: '#FFFFFF',
+					sidebar: '#F5F5F5',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
