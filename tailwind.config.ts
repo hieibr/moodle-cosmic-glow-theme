@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,17 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Moodle theme colors
+				moodle: {
+					darkBlue: '#0B1738',
+					blue: '#0033CC',
+					brightBlue: '#1363FB',
+					lightBlue: '#3C7AF1',
+					black: '#000000',
+					darkGray: '#53565A',
+					gray: '#9DA2AF',
+					light: '#EDEFF2',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +96,20 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 0 0 rgba(19, 99, 251, 0.4)'
+					},
+					'50%': {
+						boxShadow: '0 0 10px 2px rgba(19, 99, 251, 0.7)'
+					}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-glow': 'pulse-glow 2s infinite'
 			}
 		}
 	},
